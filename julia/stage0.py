@@ -32,6 +32,9 @@ def main():
     if i < b:
         # Rezuljtat na ekrane, pri vipolnenii visheukazannogo uslovija
         print('This number is less than 20!')
+    if i == b:
+        print('This is exactly 20!')
+
 
 
 
