@@ -22,13 +22,14 @@ def main():
     # Peremennaja, kotoruju vvodit poljzovatelj, v dannom sluchae chislo
     num = input()
     # Statement
-    b = '20'
+    b = 20
+    i = int(num)
     # Uslovie
-    if num > b:
+    if i > b:
        # Rezuljtat na ekrane, pri vipolnenii visheukazannogo uslovija
        print('This number is greater than 20!')
     # Uslovie
-    if num < b:
+    if i < b:
         # Rezuljtat na ekrane, pri vipolnenii visheukazannogo uslovija
         print('This number is less than 20!')
 
@@ -36,4 +37,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
