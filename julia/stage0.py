@@ -8,13 +8,13 @@ def main():
     # Peremennaja, kotoruju vvodit poljzovatelj, v dannom sluchae imja
     yourName = input()
     # Statement (ne znaju kak nazvatj, chto-to vrode konstanti)
-    a = 'Oleg'
+    name = 'Oleg'
     # Uslovie, sravnenie vvedennoj peremennoj so Statementom
-    if yourName == a:
+    if yourName == name:
         # Rezuljtat, kotorij programma vivodit na ekran, pri vipolnenii visheupomjanutogo uslovija
         print('Nice to meet you, ' + yourName + ', Have a nice day!!!')
     # Uslovie, pri kotorom vvedennaj peremennaja ne sovpadaet so Statementom
-    if yourName != a:
+    if yourName != name:
         # Rezuljtat, kotorij programma vivodit na ekran, pri vipolnenii visheukazannogo uslovija
         print('Nice to meet you, ' + yourName + '!')
     # Prosjba programmi vvesti chislo
@@ -22,19 +22,18 @@ def main():
     # Peremennaja, kotoruju vvodit poljzovatelj, v dannom sluchae chislo
     num = input()
     # Statement
-    b = 20
-    i = int(num)
+    myNumber = 20
+    yourNumber = int(num)
     # Uslovie
-    if i > b:
+    if yourNumber > myNumber:
        # Rezuljtat na ekrane, pri vipolnenii visheukazannogo uslovija
        print('This number is greater than 20!')
     # Uslovie
-    if i < b:
+    elif yourNumber < myNumber:
         # Rezuljtat na ekrane, pri vipolnenii visheukazannogo uslovija
         print('This number is less than 20!')
-    if i == b:
+    else:
         print('This is exactly 20!')
-
 
 
 #detecting if file is called
