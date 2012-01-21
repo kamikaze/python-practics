@@ -4,7 +4,7 @@ Created on 21.01.2012
 @author: kamikaze
 '''
 import unittest
-from oleinikov_tests import numbersarr2range
+from oleinikov_tasks import numbersarr2range
 from random import shuffle
 
 
@@ -40,7 +40,8 @@ class OleinikovComTest(unittest.TestCase):
 
         self.assertEqual(numbersarr2range(input_data),
                          self.numbersarr2range_expected_result)
-    
+
+
     def test_numbersarr2range_shuffled(self):
         input_data = [
             1191, 1195, 1196, 1199, 1201, 1202, 1203, 1205, 1206, 1207, 1208,
