@@ -23,3 +23,13 @@ def __get_ranges(seq):
 
 def numbersarr2range(numbers):
     return '; '.join(__get_ranges(numbers))
+
+def __get_numbers(range_str):
+    for range_ in range_str.split(';'):
+        limits = range_.strip().split('-', 1)
+        
+        for number in range(int(limits[0]), int(limits[-1])+1):
+            yield number
+
+def ranges2numbersarr(range_str):
+    return [number for number in __get_numbers(range_str)]

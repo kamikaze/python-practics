@@ -4,7 +4,7 @@ Created on 21.01.2012
 @author: kamikaze
 '''
 import unittest
-from oleinikov_tasks import numbersarr2range
+from oleinikov_tasks import numbersarr2range, ranges2numbersarr
 from random import shuffle
 
 
@@ -56,6 +56,15 @@ class OleinikovComTest(unittest.TestCase):
         
         self.assertEqual(numbersarr2range(input_data),
                          self.numbersarr2range_expected_result)
+    
+    def test_ranges2numbersarr(self):
+        input_data = '7676;7700-7702;7705;7707;771-772;7760-7764;7777'
+        expected_result = [
+            7676, 7700, 7701, 7702, 7705, 7707,
+            771, 772, 7760, 7761, 7762, 7763, 7764, 7777,
+        ]
+        
+        self.assertEqual(ranges2numbersarr(input_data), expected_result)
         
 
 
