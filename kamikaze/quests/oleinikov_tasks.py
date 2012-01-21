@@ -28,8 +28,11 @@ def __get_numbers(range_str):
     for range_ in range_str.split(';'):
         limits = range_.strip().split('-', 1)
         
-        for number in range(int(limits[0]), int(limits[-1])+1):
-            yield number
+        try:
+            for number in range(int(limits[0]), int(limits[-1])+1):
+                yield number
+        except ValueError:
+            pass
 
 def ranges2numbersarr(range_str):
     return [number for number in __get_numbers(range_str)]
