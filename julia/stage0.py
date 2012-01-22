@@ -3,10 +3,8 @@
 def main():
     # Privetstvie programmi
     print('Hello, I am your first programm!')
-    # Znakomstvo s poljzovatelem
-    print('What is your name?')
-    # Peremennaja, kotoruju vvodit poljzovatelj, v dannom sluchae imja
-    yourName = input()
+    # Znakomstvo s poljzovatelem i peremennaja, kotoruju vvodit poljzovatelj, v dannom sluchae imja
+    yourName = input('What is your name?')
     # Statement (ne znaju kak nazvatj, chto-to vrode konstanti)
     name = 'Oleg'
     # Uslovie, sravnenie vvedennoj peremennoj so Statementom
@@ -34,7 +32,6 @@ def main():
         print('This number is less than 20!')
     else:
         print('This is exactly 20!')
-
 
 #detecting if file is called
 if __name__ == '__main__':
