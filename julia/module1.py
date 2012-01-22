@@ -19,13 +19,13 @@ def main():
 
     input('Enter your name: ')
 
-     cnt = input('Enter the number: ')
-     cnt = int(cnt)
-     i = 0
+    cnt = input('Enter the number: ')
+    cnt = int(cnt)
+    i = 0
 
-     while i < cnt:
-           print('Hello')
-           i = i+1
+    while i < cnt:
+        print('Hello')
+        i = i+1
 
 
 
