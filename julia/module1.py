@@ -9,6 +9,7 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 def magic(a=10, b=5):
     return a-b
