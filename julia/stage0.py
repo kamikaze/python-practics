@@ -14,7 +14,7 @@ def main():
         # Rezuljtat, kotorij programma vivodit na ekran, pri vipolnenii visheupomjanutogo uslovija
         print('Nice to meet you, ' + yourName + ', Have a nice day!!!')
     # Uslovie, pri kotorom vvedennaj peremennaja ne sovpadaet so Statementom
-    if yourName != name:
+    else:
         # Rezuljtat, kotorij programma vivodit na ekran, pri vipolnenii visheukazannogo uslovija
         print('Nice to meet you, ' + yourName + '!')
     # Prosjba programmi vvesti chislo
