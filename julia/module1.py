@@ -9,6 +9,7 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 def magic(a=10, b=5):
     return a-b
@@ -19,13 +20,13 @@ def main():
 
     input('Enter your name: ')
 
-     cnt = input('Enter the number: ')
-     cnt = int(cnt)
-     i = 0
+    cnt = input('Enter the number: ')
+    cnt = int(cnt)
+    i = 0
 
-     while i < cnt:
-           print('Hello')
-           i = i+1
+    while i < cnt:
+        print('Hello')
+        i = i+1
 
 
 
