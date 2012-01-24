@@ -1,0 +1,46 @@
+Facebook Hacker Cup 2012, Qualification Round, Problem 3:
+*Alphabet Soup*
+
+Alfredo Spaghetti really likes soup, especially when it contains
+alphabetpasta. Every day he constructs a sentence from letters, places the
+letters intoa bowl of broth and enjoys delicious alphabet soup.
+
+Today, after constructing the sentence, Alfredo remembered that the
+FacebookHacker Cup starts today! Thus, he decided to construct the phrase
+"HACKERCUP".As he already added the letters to the broth, he is stuck with the
+letters heoriginally selected. Help Alfredo determine how many times he
+canplace the word "HACKERCUP" side-by-side using the letters in his soup.
+
+*Input*
+The first line of the input file contains a single integer T: the number
+oftest cases. T lines follow, each representing a single test case with a
+sequenceof upper-case letters and spaces: the original sentence Alfredo
+constructed.
+
+*Output*
+Output T lines, one for each test case. For each case, output "Case : n",where
+t is the test case number (starting from 1) and n is the number of timesthe
+word "HACKERCUP" can be placed side-by-side using the letters from
+thesentence.
+
+*Constraints*
+1 < T ≤ 20
+Sentences contain only the upper-case letters A-Z and the space character Each
+sentence contains at least one letter, and contains at most 1000characters,
+including spaces.
+
+*Example input*
+5
+WELCOME TO FACEBOOK HACKERCUP
+CUP WITH LABEL HACKERCUP BELONGS TO HACKER
+QUICK CUTE BROWN FOX JUMPS OVER THE LAZY DOG
+MOVE FAST BE BOLD
+HACK THE HACKERCUP
+
+*Example output*
+Case #1: 1
+Case #2: 2
+Case #3: 1
+Case #4: 0
+Case #5: 1
+
