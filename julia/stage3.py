@@ -18,8 +18,7 @@ def my_greeting():
     return name
 
 def my_magic_greeting(name, time_of_day):
-    greeting_user = print('Good ' + time_of_day + ', ' + name + '!')
-    return greeting_user
+    print('Good ' + time_of_day + ', ' + name + '!')
 
 def main():
     result = my_sum(2, 3)
