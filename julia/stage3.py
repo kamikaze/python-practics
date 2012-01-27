@@ -17,9 +17,8 @@ def my_greeting():
     name = input('What is your name: ')
     return name
 
-def my_magic_greeting(name, time_of_day):
-    greeting_user = print('Good ' + time_of_day + ', ' + name + '!')
-    return greeting_user
+def my_magic_greeting(name='Julia', time_of_day='morning'):
+    print('Good ' + time_of_day + ', ' + name + '!')
 
 def main():
     result = my_sum(2, 3)
@@ -32,15 +31,15 @@ def main():
     print(result)
 
     #result = my_greeting()
-    my_magic = my_greeting
-    result = my_magic()
-    print(result)
+    #my_magic = my_greeting
+    #result = my_magic()
+    #print(result)
 
-    result = my_magic_greeting('Julia', 'morning')
-    print(result)
+    my_magic_greeting('Oleg', 'evening')
 
-    result = my_magic_greeting(time_of_day = 'morning', name = 'Julia')
-    print(result)
+    my_magic_greeting(time_of_day = 'evening', name = 'Oleg')
+
+    my_magic_greeting()
 
 if __name__ == '__main__':
    main()
