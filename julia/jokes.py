@@ -11,7 +11,8 @@ def main():
     input('Knock knock.: ')
     input("Who's there?")
     input('Interrupting cow.')
-    print('Interrupting cow wh-MOO!')
+    print('Interrupting cow wh', end='')
+    print('-MOO!')
 
 if __name__ == '__main__':
     main()
