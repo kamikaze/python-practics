@@ -4,7 +4,8 @@ Created on 21.01.2012
 @author: kamikaze
 '''
 import unittest
-from oleinikov_tasks import numbersarr2range, ranges2numbersarr
+from oleinikov_tasks import numbersarr2range, ranges2numbersarr,\
+    numbersarr2prefixes
 from random import shuffle
 
 
@@ -56,7 +57,8 @@ class OleinikovComTest(unittest.TestCase):
         
         self.assertEqual(numbersarr2range(input_data),
                          self.numbersarr2range_expected_result)
-    
+
+
     def test_ranges2numbersarr(self):
         input_data = '7676;7700-7702;7705;7707;771-772;7760-7764;7777'
         expected_result = [
@@ -65,8 +67,20 @@ class OleinikovComTest(unittest.TestCase):
         ]
         
         self.assertEqual(ranges2numbersarr(input_data), expected_result)
-        
 
+
+    def test_numbersarr2prefixes(self):
+        input_data = '74952200000-74952209999;74952210000-74952210099;74952211000-74952211019;74952211050-74952211132;74952211134-74952211154'
+        expected_result = [
+            7495220, 749522100, 7495221100, 7495221101, 7495221105, 7495221106,
+            7495221107, 7495221108, 7495221109, 7495221110, 7495221111,
+            7495221112, 74952211130, 74952211131, 74952211132, 74952211134,
+            74952211135, 74952211136, 74952211137, 74952211138, 74952211139,
+            7495221114, 74952211150, 74952211151, 74952211152, 74952211153,
+            74952211154, 
+        ]
+
+        self.assertEqual(numbersarr2prefixes(input_data), expected_result)
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
